@@ -1,0 +1,19 @@
+# Instalar Django 2.2.4
+pip install django==2.2.4
+
+# Criar o projeto:
+django-admin startproject nomedoprojeto . # o . é para criar no mesmo diretório em que o comando foi chamado.
+
+# Criar a aplicação dentro do projeto
+django-admin startapp core # Existe diferenças entre projeto e aplicação
+
+# Informar o nome da aplicação em INSTALLED_APPS do arquivo settings.py do projeto
+
+# Informar o diretório 'templates' em 
+    TEMPLATES=[{'DIRS':}] no arquivo settings.py
+
+# Rodar o servidor
+python manage.py runserver # deve ser executado de dentro do diretório onde está o arquivo manage.py
+
+# Apenas em ambiente de desenvolvimento
+ALLOWED_HOSTS = ['*']
